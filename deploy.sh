@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run build
+yarn build
 
 # navigate into the build output directory
 cd dist
@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'Deploy'
 
-git push -f git@github.com:TngSam/github-repo-browser.git master:gh-pages
+git push -f git@github.com:TngSam/github-repo-browser.git master
 
 cd -
